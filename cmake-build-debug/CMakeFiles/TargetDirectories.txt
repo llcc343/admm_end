@@ -1,0 +1,3 @@
+/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles/edit_cache.dir
+/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles/admm_end.dir
