@@ -86,9 +86,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/media/zjh/文档/linux/code/myCode/admm代码/admm_end/include/admm.cpp">
-			<Option target="admm_end"/>
-		</Unit>
 		<Unit filename="/media/zjh/文档/linux/code/myCode/admm代码/admm_end/include/admm.h">
 			<Option target="admm_end"/>
 		</Unit>
@@ -102,6 +99,9 @@
 			<Option target="admm_end"/>
 		</Unit>
 		<Unit filename="/media/zjh/文档/linux/code/myCode/admm代码/admm_end/include/sub_problem/optimizer.h">
+			<Option target="admm_end"/>
+		</Unit>
+		<Unit filename="/media/zjh/文档/linux/code/myCode/admm代码/admm_end/src/admm.cpp">
 			<Option target="admm_end"/>
 		</Unit>
 		<Unit filename="/media/zjh/文档/linux/code/myCode/admm代码/admm_end/src/admm_comm.cpp">

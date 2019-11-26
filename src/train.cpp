@@ -11,26 +11,32 @@ int main(int argc,char **argv) {
     MPI_Init(&argc,&argv);
 
     //1. 参数设置
-    int proc_size,proc_id,thread_nums;
+    //进程设置
+    int proc_size,proc_id;
     char machine_name[1024];
     int name_len=1024;
-    char train_file[1024];
-    int partial_barrier,bounded_delay;
-    double bias=-1.0;
-    double rho=-1.0;
-    double C=1.0;
-    double abs_tol=1e-3,rel_tol=1e-3;
-    int admm_iter=50;
-
     MPI_Comm_size(MPI_COMM_WORLD,&proc_size);
     MPI_Comm_rank(MPI_COMM_WORLD,&proc_id);
     MPI_Get_processor_name(machine_name,&name_len);
-
     std::vector<int> worker_id(proc_size-1);
     for (int i = 0; i < worker_id.size(); ++i) {
         worker_id[i]=i;
     }
     int master_id=proc_size-1;
+    //训练数据集设置
+    char train_file[1024];
+    double bias=-1.0;
+    //通信设置
+    int partial_barrier,bounded_delay;
+    //子问题求解设置
+    std::string solve_sub_problem="multicore_tron";
+    std::string reg="l2";
+    int thread_nums;
+    //ADMM超参数设置
+    double rho=-1.0;
+    double C=1.0;
+    double abs_tol=1e-3,rel_tol=1e-3;
+    int admm_iter=50;
 
     if(argc==5){
         thread_nums=atoi(argv[1]);
@@ -42,9 +48,6 @@ int main(int argc,char **argv) {
             printf("请输入：./ssp_hierarchical_parallel_subproblem_admm thread_nums train_file partial_barrier bounded_delay\n");
         return -1;
     }
-
-    std::string solve_sub_problem="multicore_tron";
-    std::string reg="l2";
 
     //2. 读取数据集
     Problem prob(train_file,bias);

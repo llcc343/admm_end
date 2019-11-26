@@ -123,32 +123,32 @@ admm_end/fast:
 	$(MAKE) -f CMakeFiles/admm_end.dir/build.make CMakeFiles/admm_end.dir/build
 .PHONY : admm_end/fast
 
-include/admm.o: include/admm.cpp.o
+src/admm.o: src/admm.cpp.o
 
-.PHONY : include/admm.o
+.PHONY : src/admm.o
 
 # target to build an object file
-include/admm.cpp.o:
-	$(MAKE) -f CMakeFiles/admm_end.dir/build.make CMakeFiles/admm_end.dir/include/admm.cpp.o
-.PHONY : include/admm.cpp.o
+src/admm.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_end.dir/build.make CMakeFiles/admm_end.dir/src/admm.cpp.o
+.PHONY : src/admm.cpp.o
 
-include/admm.i: include/admm.cpp.i
+src/admm.i: src/admm.cpp.i
 
-.PHONY : include/admm.i
+.PHONY : src/admm.i
 
 # target to preprocess a source file
-include/admm.cpp.i:
-	$(MAKE) -f CMakeFiles/admm_end.dir/build.make CMakeFiles/admm_end.dir/include/admm.cpp.i
-.PHONY : include/admm.cpp.i
+src/admm.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_end.dir/build.make CMakeFiles/admm_end.dir/src/admm.cpp.i
+.PHONY : src/admm.cpp.i
 
-include/admm.s: include/admm.cpp.s
+src/admm.s: src/admm.cpp.s
 
-.PHONY : include/admm.s
+.PHONY : src/admm.s
 
 # target to generate assembly for a file
-include/admm.cpp.s:
-	$(MAKE) -f CMakeFiles/admm_end.dir/build.make CMakeFiles/admm_end.dir/include/admm.cpp.s
-.PHONY : include/admm.cpp.s
+src/admm.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_end.dir/build.make CMakeFiles/admm_end.dir/src/admm.cpp.s
+.PHONY : src/admm.cpp.s
 
 src/admm_comm.o: src/admm_comm.cpp.o
 
@@ -402,9 +402,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... admm_end"
-	@echo "... include/admm.o"
-	@echo "... include/admm.i"
-	@echo "... include/admm.s"
+	@echo "... src/admm.o"
+	@echo "... src/admm.i"
+	@echo "... src/admm.s"
 	@echo "... src/admm_comm.o"
 	@echo "... src/admm_comm.i"
 	@echo "... src/admm_comm.s"

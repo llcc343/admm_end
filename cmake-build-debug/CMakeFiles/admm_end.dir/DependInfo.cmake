@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/media/zjh/文档/linux/code/myCode/admm代码/admm_end/include/admm.cpp" "/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles/admm_end.dir/include/admm.cpp.o"
+  "/media/zjh/文档/linux/code/myCode/admm代码/admm_end/src/admm.cpp" "/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles/admm_end.dir/src/admm.cpp.o"
   "/media/zjh/文档/linux/code/myCode/admm代码/admm_end/src/admm_comm.cpp" "/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles/admm_end.dir/src/admm_comm.cpp.o"
   "/media/zjh/文档/linux/code/myCode/admm代码/admm_end/src/prob.cpp" "/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles/admm_end.dir/src/prob.cpp.o"
   "/media/zjh/文档/linux/code/myCode/admm代码/admm_end/src/sub_problem/gd.cpp" "/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles/admm_end.dir/src/sub_problem/gd.cpp.o"

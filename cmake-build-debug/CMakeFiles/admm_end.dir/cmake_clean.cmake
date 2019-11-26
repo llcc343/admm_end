@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/admm_end.dir/src/admm.cpp.o"
   "CMakeFiles/admm_end.dir/src/admm_comm.cpp.o"
   "CMakeFiles/admm_end.dir/src/prob.cpp.o"
   "CMakeFiles/admm_end.dir/src/train.cpp.o"
@@ -8,7 +9,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/admm_end.dir/src/sub_problem/tron.cpp.o"
   "CMakeFiles/admm_end.dir/src/utils/math_utils.cpp.o"
   "CMakeFiles/admm_end.dir/src/utils/sparse_operator.cpp.o"
-  "CMakeFiles/admm_end.dir/include/admm.cpp.o"
   "../bin/admm_end.pdb"
   "../bin/admm_end"
 )

@@ -57,9 +57,33 @@ include CMakeFiles/admm_end.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/admm_end.dir/flags.make
 
+CMakeFiles/admm_end.dir/src/admm.cpp.o: CMakeFiles/admm_end.dir/flags.make
+CMakeFiles/admm_end.dir/src/admm.cpp.o: ../src/admm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/admm_end.dir/src/admm.cpp.o"
+	mpicxx  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/admm_end.dir/src/admm.cpp.o -c /media/zjh/文档/linux/code/myCode/admm代码/admm_end/src/admm.cpp
+
+CMakeFiles/admm_end.dir/src/admm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/admm_end.dir/src/admm.cpp.i"
+	mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/zjh/文档/linux/code/myCode/admm代码/admm_end/src/admm.cpp > CMakeFiles/admm_end.dir/src/admm.cpp.i
+
+CMakeFiles/admm_end.dir/src/admm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/admm_end.dir/src/admm.cpp.s"
+	mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/zjh/文档/linux/code/myCode/admm代码/admm_end/src/admm.cpp -o CMakeFiles/admm_end.dir/src/admm.cpp.s
+
+CMakeFiles/admm_end.dir/src/admm.cpp.o.requires:
+
+.PHONY : CMakeFiles/admm_end.dir/src/admm.cpp.o.requires
+
+CMakeFiles/admm_end.dir/src/admm.cpp.o.provides: CMakeFiles/admm_end.dir/src/admm.cpp.o.requires
+	$(MAKE) -f CMakeFiles/admm_end.dir/build.make CMakeFiles/admm_end.dir/src/admm.cpp.o.provides.build
+.PHONY : CMakeFiles/admm_end.dir/src/admm.cpp.o.provides
+
+CMakeFiles/admm_end.dir/src/admm.cpp.o.provides.build: CMakeFiles/admm_end.dir/src/admm.cpp.o
+
+
 CMakeFiles/admm_end.dir/src/admm_comm.cpp.o: CMakeFiles/admm_end.dir/flags.make
 CMakeFiles/admm_end.dir/src/admm_comm.cpp.o: ../src/admm_comm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/admm_end.dir/src/admm_comm.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/admm_end.dir/src/admm_comm.cpp.o"
 	mpicxx  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/admm_end.dir/src/admm_comm.cpp.o -c /media/zjh/文档/linux/code/myCode/admm代码/admm_end/src/admm_comm.cpp
 
 CMakeFiles/admm_end.dir/src/admm_comm.cpp.i: cmake_force
@@ -83,7 +107,7 @@ CMakeFiles/admm_end.dir/src/admm_comm.cpp.o.provides.build: CMakeFiles/admm_end.
 
 CMakeFiles/admm_end.dir/src/prob.cpp.o: CMakeFiles/admm_end.dir/flags.make
 CMakeFiles/admm_end.dir/src/prob.cpp.o: ../src/prob.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/admm_end.dir/src/prob.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/admm_end.dir/src/prob.cpp.o"
 	mpicxx  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/admm_end.dir/src/prob.cpp.o -c /media/zjh/文档/linux/code/myCode/admm代码/admm_end/src/prob.cpp
 
 CMakeFiles/admm_end.dir/src/prob.cpp.i: cmake_force
@@ -107,7 +131,7 @@ CMakeFiles/admm_end.dir/src/prob.cpp.o.provides.build: CMakeFiles/admm_end.dir/s
 
 CMakeFiles/admm_end.dir/src/train.cpp.o: CMakeFiles/admm_end.dir/flags.make
 CMakeFiles/admm_end.dir/src/train.cpp.o: ../src/train.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/admm_end.dir/src/train.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/admm_end.dir/src/train.cpp.o"
 	mpicxx  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/admm_end.dir/src/train.cpp.o -c /media/zjh/文档/linux/code/myCode/admm代码/admm_end/src/train.cpp
 
 CMakeFiles/admm_end.dir/src/train.cpp.i: cmake_force
@@ -131,7 +155,7 @@ CMakeFiles/admm_end.dir/src/train.cpp.o.provides.build: CMakeFiles/admm_end.dir/
 
 CMakeFiles/admm_end.dir/src/sub_problem/gd.cpp.o: CMakeFiles/admm_end.dir/flags.make
 CMakeFiles/admm_end.dir/src/sub_problem/gd.cpp.o: ../src/sub_problem/gd.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/admm_end.dir/src/sub_problem/gd.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/admm_end.dir/src/sub_problem/gd.cpp.o"
 	mpicxx  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/admm_end.dir/src/sub_problem/gd.cpp.o -c /media/zjh/文档/linux/code/myCode/admm代码/admm_end/src/sub_problem/gd.cpp
 
 CMakeFiles/admm_end.dir/src/sub_problem/gd.cpp.i: cmake_force
@@ -155,7 +179,7 @@ CMakeFiles/admm_end.dir/src/sub_problem/gd.cpp.o.provides.build: CMakeFiles/admm
 
 CMakeFiles/admm_end.dir/src/sub_problem/l2r_lr_fun.cpp.o: CMakeFiles/admm_end.dir/flags.make
 CMakeFiles/admm_end.dir/src/sub_problem/l2r_lr_fun.cpp.o: ../src/sub_problem/l2r_lr_fun.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/admm_end.dir/src/sub_problem/l2r_lr_fun.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/admm_end.dir/src/sub_problem/l2r_lr_fun.cpp.o"
 	mpicxx  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/admm_end.dir/src/sub_problem/l2r_lr_fun.cpp.o -c /media/zjh/文档/linux/code/myCode/admm代码/admm_end/src/sub_problem/l2r_lr_fun.cpp
 
 CMakeFiles/admm_end.dir/src/sub_problem/l2r_lr_fun.cpp.i: cmake_force
@@ -179,7 +203,7 @@ CMakeFiles/admm_end.dir/src/sub_problem/l2r_lr_fun.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/admm_end.dir/src/sub_problem/l2r_lr_fun_multicore_tron.cpp.o: CMakeFiles/admm_end.dir/flags.make
 CMakeFiles/admm_end.dir/src/sub_problem/l2r_lr_fun_multicore_tron.cpp.o: ../src/sub_problem/l2r_lr_fun_multicore_tron.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/admm_end.dir/src/sub_problem/l2r_lr_fun_multicore_tron.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/admm_end.dir/src/sub_problem/l2r_lr_fun_multicore_tron.cpp.o"
 	mpicxx  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/admm_end.dir/src/sub_problem/l2r_lr_fun_multicore_tron.cpp.o -c /media/zjh/文档/linux/code/myCode/admm代码/admm_end/src/sub_problem/l2r_lr_fun_multicore_tron.cpp
 
 CMakeFiles/admm_end.dir/src/sub_problem/l2r_lr_fun_multicore_tron.cpp.i: cmake_force
@@ -203,7 +227,7 @@ CMakeFiles/admm_end.dir/src/sub_problem/l2r_lr_fun_multicore_tron.cpp.o.provides
 
 CMakeFiles/admm_end.dir/src/sub_problem/tron.cpp.o: CMakeFiles/admm_end.dir/flags.make
 CMakeFiles/admm_end.dir/src/sub_problem/tron.cpp.o: ../src/sub_problem/tron.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/admm_end.dir/src/sub_problem/tron.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/admm_end.dir/src/sub_problem/tron.cpp.o"
 	mpicxx  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/admm_end.dir/src/sub_problem/tron.cpp.o -c /media/zjh/文档/linux/code/myCode/admm代码/admm_end/src/sub_problem/tron.cpp
 
 CMakeFiles/admm_end.dir/src/sub_problem/tron.cpp.i: cmake_force
@@ -227,7 +251,7 @@ CMakeFiles/admm_end.dir/src/sub_problem/tron.cpp.o.provides.build: CMakeFiles/ad
 
 CMakeFiles/admm_end.dir/src/utils/math_utils.cpp.o: CMakeFiles/admm_end.dir/flags.make
 CMakeFiles/admm_end.dir/src/utils/math_utils.cpp.o: ../src/utils/math_utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/admm_end.dir/src/utils/math_utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/admm_end.dir/src/utils/math_utils.cpp.o"
 	mpicxx  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/admm_end.dir/src/utils/math_utils.cpp.o -c /media/zjh/文档/linux/code/myCode/admm代码/admm_end/src/utils/math_utils.cpp
 
 CMakeFiles/admm_end.dir/src/utils/math_utils.cpp.i: cmake_force
@@ -251,7 +275,7 @@ CMakeFiles/admm_end.dir/src/utils/math_utils.cpp.o.provides.build: CMakeFiles/ad
 
 CMakeFiles/admm_end.dir/src/utils/sparse_operator.cpp.o: CMakeFiles/admm_end.dir/flags.make
 CMakeFiles/admm_end.dir/src/utils/sparse_operator.cpp.o: ../src/utils/sparse_operator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/admm_end.dir/src/utils/sparse_operator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/admm_end.dir/src/utils/sparse_operator.cpp.o"
 	mpicxx  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/admm_end.dir/src/utils/sparse_operator.cpp.o -c /media/zjh/文档/linux/code/myCode/admm代码/admm_end/src/utils/sparse_operator.cpp
 
 CMakeFiles/admm_end.dir/src/utils/sparse_operator.cpp.i: cmake_force
@@ -273,32 +297,9 @@ CMakeFiles/admm_end.dir/src/utils/sparse_operator.cpp.o.provides: CMakeFiles/adm
 CMakeFiles/admm_end.dir/src/utils/sparse_operator.cpp.o.provides.build: CMakeFiles/admm_end.dir/src/utils/sparse_operator.cpp.o
 
 
-CMakeFiles/admm_end.dir/include/admm.cpp.o: CMakeFiles/admm_end.dir/flags.make
-CMakeFiles/admm_end.dir/include/admm.cpp.o: ../include/admm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/admm_end.dir/include/admm.cpp.o"
-	mpicxx  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/admm_end.dir/include/admm.cpp.o -c /media/zjh/文档/linux/code/myCode/admm代码/admm_end/include/admm.cpp
-
-CMakeFiles/admm_end.dir/include/admm.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/admm_end.dir/include/admm.cpp.i"
-	mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/zjh/文档/linux/code/myCode/admm代码/admm_end/include/admm.cpp > CMakeFiles/admm_end.dir/include/admm.cpp.i
-
-CMakeFiles/admm_end.dir/include/admm.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/admm_end.dir/include/admm.cpp.s"
-	mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/zjh/文档/linux/code/myCode/admm代码/admm_end/include/admm.cpp -o CMakeFiles/admm_end.dir/include/admm.cpp.s
-
-CMakeFiles/admm_end.dir/include/admm.cpp.o.requires:
-
-.PHONY : CMakeFiles/admm_end.dir/include/admm.cpp.o.requires
-
-CMakeFiles/admm_end.dir/include/admm.cpp.o.provides: CMakeFiles/admm_end.dir/include/admm.cpp.o.requires
-	$(MAKE) -f CMakeFiles/admm_end.dir/build.make CMakeFiles/admm_end.dir/include/admm.cpp.o.provides.build
-.PHONY : CMakeFiles/admm_end.dir/include/admm.cpp.o.provides
-
-CMakeFiles/admm_end.dir/include/admm.cpp.o.provides.build: CMakeFiles/admm_end.dir/include/admm.cpp.o
-
-
 # Object files for target admm_end
 admm_end_OBJECTS = \
+"CMakeFiles/admm_end.dir/src/admm.cpp.o" \
 "CMakeFiles/admm_end.dir/src/admm_comm.cpp.o" \
 "CMakeFiles/admm_end.dir/src/prob.cpp.o" \
 "CMakeFiles/admm_end.dir/src/train.cpp.o" \
@@ -307,12 +308,12 @@ admm_end_OBJECTS = \
 "CMakeFiles/admm_end.dir/src/sub_problem/l2r_lr_fun_multicore_tron.cpp.o" \
 "CMakeFiles/admm_end.dir/src/sub_problem/tron.cpp.o" \
 "CMakeFiles/admm_end.dir/src/utils/math_utils.cpp.o" \
-"CMakeFiles/admm_end.dir/src/utils/sparse_operator.cpp.o" \
-"CMakeFiles/admm_end.dir/include/admm.cpp.o"
+"CMakeFiles/admm_end.dir/src/utils/sparse_operator.cpp.o"
 
 # External object files for target admm_end
 admm_end_EXTERNAL_OBJECTS =
 
+../bin/admm_end: CMakeFiles/admm_end.dir/src/admm.cpp.o
 ../bin/admm_end: CMakeFiles/admm_end.dir/src/admm_comm.cpp.o
 ../bin/admm_end: CMakeFiles/admm_end.dir/src/prob.cpp.o
 ../bin/admm_end: CMakeFiles/admm_end.dir/src/train.cpp.o
@@ -322,7 +323,6 @@ admm_end_EXTERNAL_OBJECTS =
 ../bin/admm_end: CMakeFiles/admm_end.dir/src/sub_problem/tron.cpp.o
 ../bin/admm_end: CMakeFiles/admm_end.dir/src/utils/math_utils.cpp.o
 ../bin/admm_end: CMakeFiles/admm_end.dir/src/utils/sparse_operator.cpp.o
-../bin/admm_end: CMakeFiles/admm_end.dir/include/admm.cpp.o
 ../bin/admm_end: CMakeFiles/admm_end.dir/build.make
 ../bin/admm_end: CMakeFiles/admm_end.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/zjh/文档/linux/code/myCode/admm代码/admm_end/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable ../bin/admm_end"
@@ -333,6 +333,7 @@ CMakeFiles/admm_end.dir/build: ../bin/admm_end
 
 .PHONY : CMakeFiles/admm_end.dir/build
 
+CMakeFiles/admm_end.dir/requires: CMakeFiles/admm_end.dir/src/admm.cpp.o.requires
 CMakeFiles/admm_end.dir/requires: CMakeFiles/admm_end.dir/src/admm_comm.cpp.o.requires
 CMakeFiles/admm_end.dir/requires: CMakeFiles/admm_end.dir/src/prob.cpp.o.requires
 CMakeFiles/admm_end.dir/requires: CMakeFiles/admm_end.dir/src/train.cpp.o.requires
@@ -342,7 +343,6 @@ CMakeFiles/admm_end.dir/requires: CMakeFiles/admm_end.dir/src/sub_problem/l2r_lr
 CMakeFiles/admm_end.dir/requires: CMakeFiles/admm_end.dir/src/sub_problem/tron.cpp.o.requires
 CMakeFiles/admm_end.dir/requires: CMakeFiles/admm_end.dir/src/utils/math_utils.cpp.o.requires
 CMakeFiles/admm_end.dir/requires: CMakeFiles/admm_end.dir/src/utils/sparse_operator.cpp.o.requires
-CMakeFiles/admm_end.dir/requires: CMakeFiles/admm_end.dir/include/admm.cpp.o.requires
 
 .PHONY : CMakeFiles/admm_end.dir/requires
 

@@ -53,7 +53,11 @@ void Admm::subproblem_multicore_tron(){
 }
 
 void Admm::x_update() {
-    subproblem_multicore_tron();
+    if(solve_sub_problem_=="multicore_tron"){
+        subproblem_multicore_tron();
+    }else if(solve_sub_problem_=="gd"){
+
+    }
 }
 
 void Admm::y_update() {
@@ -62,15 +66,43 @@ void Admm::y_update() {
     }
 }
 
-// only l2
+// l1 or l2 or none
 void Admm::z_update() {
-    for (int i = 0; i < dim_; ++i) {
-        z_pre_[i]=z_[i];
-        z_[i]=0.0;
-        for (int j = 0; j < worker_nums_; ++j) {
-            z_[i]+=master_data_[j][i]+master_data_[j][i+dim_]/rho_;
+    if(reg_=="l2"){
+        for (int i = 0; i < dim_; ++i) {
+            z_pre_[i]=z_[i];
+            z_[i]=0.0;
+            for (int j = 0; j < worker_nums_; ++j) {
+                z_[i]+=master_data_[j][i]+master_data_[j][i+dim_]/rho_;
+            }
+            z_[i]*=rho_/(C_+worker_nums_*rho_);
         }
-        z_[i]*=rho_/(C_+worker_nums_*rho_);
+    }else if(reg_=="l1"){
+        double k=C_/(worker_nums_*rho_);
+        for(int i=0;i<dim_;++i){
+            z_pre_[i]=z_[i];
+            z_[i]=0.0;
+            for(int j=0;j<worker_nums_;++j){
+                z_[i]+=master_data_[j][i]-master_data_[j][i+dim_]/rho_;
+            }
+            z_[i]=z_[i]/worker_nums_;
+            if(z_[i]>k){
+                z_[i]=z_[i]-k;
+            }else if(z_[i]<-k){
+                z_[i]=z_[i]+k;
+            }else{
+                z_[i]=0.0;
+            }
+        }
+    }else{
+        for (int i = 0; i < dim_; ++i) {
+            z_pre_[i]=z_[i];
+            z_[i]=0.0;
+            for (int j = 0; j < worker_nums_; ++j) {
+                z_[i]+=master_data_[j][i]+master_data_[j][i+dim_]/rho_;
+            }
+            z_[i]=z_[i]/worker_nums_;
+        }
     }
 }
 
