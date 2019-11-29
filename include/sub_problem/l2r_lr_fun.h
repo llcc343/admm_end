@@ -10,7 +10,7 @@
 #include "prob.h"
 #include "../utils/sparse_operator.h"
 
-class l2r_lr_fun :public function{
+class l2r_lr_fun : public function{
 public:
     l2r_lr_fun(const Problem *prob, double rho);
     ~l2r_lr_fun();
@@ -20,6 +20,7 @@ public:
     void Hv(double *s, double *Hs);
 
     int get_nr_variable();
+    void get_diagH(double *M);
 
 private:
     void Xv(double *v, double *Xv);

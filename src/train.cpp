@@ -22,14 +22,14 @@ int main(int argc,char **argv) {
     for (int i = 0; i < worker_id.size(); ++i) {
         worker_id[i]=i;
     }
-    int master_id=proc_size-1;
+    int master_id=proc_size-1;//设置master的id为最后一位
     //训练数据集设置
     char train_file[1024];
-    double bias=-1.0;
+    double bias=-1.0;//bias<=0时，表示不设置bias
     //通信设置
     int partial_barrier,bounded_delay;
     //子问题求解设置
-    std::string solve_sub_problem="multicore_tron";
+    std::string solve_sub_problem="gd";
     std::string reg="l2";
     int thread_nums;
     //ADMM超参数设置
@@ -79,7 +79,7 @@ int main(int argc,char **argv) {
     MPI_Barrier(MPI_COMM_WORLD);
 
     //4. 开始训练
-    Admm admm(proc_id,proc_size,master_id,worker_id,&prob,partial_barrier,bounded_delay);
+    Admm admm(proc_id,proc_size,master_id,worker_id,&prob,partial_barrier,bounded_delay,solve_sub_problem);
     admm.train();
 
     //5.结束

@@ -12,7 +12,7 @@
 
 class Gd : public Optimizer {
 public:
-    Gd(const function *fun_obj,Problem *prob,double eps,int max_iter);
+    Gd(const function *fun_obj,double eps=0.01,int max_iter=100);
     ~Gd();
 
     void train(double *x,double *y,double *z);

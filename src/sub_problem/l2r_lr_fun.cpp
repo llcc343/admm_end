@@ -107,3 +107,7 @@ void l2r_lr_fun::XTv(double *v, double *XTv){
     for(i=0;i<l;i++)
         sparse_operator::axpy(v[i], x[i], XTv);
 }
+
+void l2r_lr_fun::get_diagH(double *M) {
+
+}

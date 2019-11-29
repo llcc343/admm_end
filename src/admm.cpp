@@ -52,11 +52,19 @@ void Admm::subproblem_multicore_tron(){
     delete tron_obj;
 }
 
+void Admm::subproblem_gd() {
+    fun_obj_=new l2r_lr_fun(prob_,rho_);
+    Gd *gd_obj=new Gd(fun_obj_);
+    gd_obj->train(x_,y_,z_);
+    delete fun_obj_;
+    delete gd_obj;
+}
+
 void Admm::x_update() {
     if(solve_sub_problem_=="multicore_tron"){
         subproblem_multicore_tron();
     }else if(solve_sub_problem_=="gd"){
-
+        subproblem_gd();
     }
 }
 

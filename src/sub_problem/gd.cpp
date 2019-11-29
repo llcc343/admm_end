@@ -5,7 +5,7 @@
 #include "sub_problem/gd.h"
 
 
-Gd::Gd(const function *fun_obj, Problem *prob,double eps,int max_iter){
+Gd::Gd(const function *fun_obj, double eps,int max_iter){
     fun_obj_=const_cast<function *>(fun_obj);
     feature_num=fun_obj_->get_nr_variable();
     g=new double[feature_num]();

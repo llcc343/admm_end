@@ -3,8 +3,12 @@
 
 CMakeFiles/admm_end.dir/src/admm.cpp.o
  ../include/./sub_problem/function.h
+ ../include/./sub_problem/gd.h
+ ../include/./sub_problem/l2r_lr_fun.h
  ../include/./sub_problem/l2r_lr_fun_multicore_tron.h
+ ../include/./sub_problem/optimizer.h
  ../include/./sub_problem/tron.h
+ ../include/./utils/math_utils.h
  ../include/./utils/sparse_operator.h
  ../include/admm.h
  ../include/admm_comm.h
@@ -41,8 +45,12 @@ CMakeFiles/admm_end.dir/src/sub_problem/tron.cpp.o
  /media/zjh/文档/linux/code/myCode/admm代码/admm_end/src/sub_problem/tron.cpp
 CMakeFiles/admm_end.dir/src/train.cpp.o
  ../include/./sub_problem/function.h
+ ../include/./sub_problem/gd.h
+ ../include/./sub_problem/l2r_lr_fun.h
  ../include/./sub_problem/l2r_lr_fun_multicore_tron.h
+ ../include/./sub_problem/optimizer.h
  ../include/./sub_problem/tron.h
+ ../include/./utils/math_utils.h
  ../include/./utils/sparse_operator.h
  ../include/admm.h
  ../include/admm_comm.h

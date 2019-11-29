@@ -8,6 +8,26 @@
 
 ../include/./sub_problem/function.h
 
+../include/./sub_problem/gd.h
+function.h
+../include/./sub_problem/function.h
+prob.h
+../include/./sub_problem/prob.h
+optimizer.h
+../include/./sub_problem/optimizer.h
+../utils/math_utils.h
+../include/./utils/math_utils.h
+
+../include/./sub_problem/l2r_lr_fun.h
+cmath
+-
+function.h
+../include/./sub_problem/function.h
+prob.h
+../include/./sub_problem/prob.h
+../utils/sparse_operator.h
+../include/./utils/sparse_operator.h
+
 ../include/./sub_problem/l2r_lr_fun_multicore_tron.h
 vector
 -
@@ -20,6 +40,8 @@ prob.h
 ../utils/sparse_operator.h
 ../include/./utils/sparse_operator.h
 
+../include/./sub_problem/optimizer.h
+
 ../include/./sub_problem/tron.h
 cmath
 -
@@ -30,6 +52,14 @@ stdio.h
 stdarg.h
 -
 function.h
+../include/./sub_problem/function.h
+
+../include/./utils/math_utils.h
+iostream
+-
+cmath
+-
+../sub_problem/function.h
 ../include/./sub_problem/function.h
 
 ../include/./utils/sparse_operator.h
@@ -49,8 +79,12 @@ prob.h
 ../include/./sub_problem/function.h
 ./sub_problem/l2r_lr_fun_multicore_tron.h
 ../include/./sub_problem/l2r_lr_fun_multicore_tron.h
+./sub_problem/l2r_lr_fun.h
+../include/./sub_problem/l2r_lr_fun.h
 ./sub_problem/tron.h
 ../include/./sub_problem/tron.h
+./sub_problem/gd.h
+../include/./sub_problem/gd.h
 
 ../include/admm_comm.h
 mpi.h

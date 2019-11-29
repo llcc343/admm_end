@@ -11,7 +11,9 @@
 #include "prob.h"
 #include "./sub_problem/function.h"
 #include "./sub_problem/l2r_lr_fun_multicore_tron.h"
+#include "./sub_problem/l2r_lr_fun.h"
 #include "./sub_problem/tron.h"
+#include "./sub_problem/gd.h"
 
 class Admm : public AdmmComm{
 
@@ -51,6 +53,7 @@ private:
     double current_cost_function();
 
     void subproblem_multicore_tron();
+    void subproblem_gd();
 
     double total_run,total_compute;
 };
